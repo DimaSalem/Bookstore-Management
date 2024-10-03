@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Bookstor_Management.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Bookstor_Management.Data
 {
@@ -8,5 +9,6 @@ namespace Bookstor_Management.Data
         {
 
         }
+        public DbSet<Book> Books { get; set; }
     }
 }
