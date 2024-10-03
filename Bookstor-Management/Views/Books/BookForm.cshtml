@@ -1,0 +1,38 @@
+﻿@model Book
+
+
+
+    <div>
+        @if(Model.Id > 0)
+        {
+            <label>
+                <span>BookId</span>
+                <input asp-for="@Model.Id" />
+            </label>
+        }
+
+        <label>
+            <span>Title</span>
+            <input asp-for="@Model.Title" />
+        </label>
+
+        <label>
+            <span>Author</span>
+            <input asp-for="@Model.Author" />
+        </label>
+
+        <label>
+            <span>Genre</span>
+            <input asp-for="@Model.Genre" />
+        </label>
+
+        <label>
+            <span>Price</span>
+            <input asp-for="@Model.Price" />
+        </label>
+
+        <button type="submit">Submit</button>
+
+    </div>
+<div asp-validation-summary="All"></div>
+

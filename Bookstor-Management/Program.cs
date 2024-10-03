@@ -10,7 +10,7 @@ namespace Bookstor_Management
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
             // Configure DbContext
             string ConnectionStringVar = builder.Configuration.GetConnectionString("DefaultConnection");

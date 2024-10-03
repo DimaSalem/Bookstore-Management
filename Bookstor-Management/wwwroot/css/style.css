@@ -1,0 +1,13 @@
+﻿
+    .Books{
+        border: 3px inset #000000;
+        margin: 30px; 
+        padding: 10px; 
+    }
+
+    td , th {
+        border: 3px inset #000000;
+        padding: 10px;
+    }
+
+
